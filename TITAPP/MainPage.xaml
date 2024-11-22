@@ -1,0 +1,18 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TITAPP.MainPage"
+             BackgroundColor="White"
+             Title="Bienvenido a TITAPP">
+    <StackLayout Padding="20" Spacing="15">
+        <Image Source="abuela.png" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150"/>
+        <Label Text="Bienvenido a TITAPP" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+
+        <Entry Placeholder="Username" x:Name="UsernameEntry"/>
+        <Entry Placeholder="Email" x:Name="EmailEntry"/>
+        <Entry Placeholder="Contraseña" x:Name="PasswordEntry" IsPassword="True"/>
+
+        <Button Text="Acceso" BackgroundColor="#87CEEB" TextColor="White" Clicked="OnLoginButtonClicked"/>
+        <Button Text="Crear cuenta" TextColor="Gray" Clicked="OnCreateAccountButtonClicked"/>
+    </StackLayout>
+</ContentPage>
+
